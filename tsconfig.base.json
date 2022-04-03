@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@regshop/core/api/service": ["libs/core/api/service/src/index.ts"],
+      "@regshop/core/environments/service": [
+        "libs/core/environments/service/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/core/environments/service",
+  "sourceRoot": "libs/core/environments/service/src",
+  "prefix": "regshop",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/core/environments/service"],
+      "options": {
+        "jestConfig": "libs/core/environments/service/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/environments/service/src/**/*.ts",
+          "libs/core/environments/service/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
