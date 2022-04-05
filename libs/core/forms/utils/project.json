@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/core/forms/utils",
+  "sourceRoot": "libs/core/forms/utils/src",
+  "prefix": "regshop",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/core/forms/utils"],
+      "options": {
+        "jestConfig": "libs/core/forms/utils/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/forms/utils/src/**/*.ts",
+          "libs/core/forms/utils/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

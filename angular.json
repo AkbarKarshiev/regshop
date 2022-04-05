@@ -3,6 +3,9 @@
   "projects": {
     "core-api-service": "libs/core/api/service",
     "core-environments-service": "libs/core/environments/service",
+    "core-forms-extract": "libs/core/forms/extract",
+    "core-forms-utils": "libs/core/forms/utils",
+    "core-utils-destroy": "libs/core/utils/destroy",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e"
   }
