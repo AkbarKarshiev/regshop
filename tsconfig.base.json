@@ -20,7 +20,10 @@
         "libs/core/environments/service/src/index.ts"
       ],
       "@regshop/core/forms/extract": ["libs/core/forms/extract/src/index.ts"],
+      "@regshop/core/forms/mask": ["libs/core/forms/mask/src/index.ts"],
       "@regshop/core/forms/utils": ["libs/core/forms/utils/src/index.ts"],
+      "@regshop/core/hammer": ["libs/core/hammer/src/index.ts"],
+      "@regshop/core/layout/service": ["libs/core/layout/service/src/index.ts"],
       "@regshop/core/utils/destroy": ["libs/core/utils/destroy/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }
