@@ -27,6 +27,15 @@
       "@regshop/core/meta/common": ["libs/core/meta/common/src/index.ts"],
       "@regshop/core/meta/service": ["libs/core/meta/service/src/index.ts"],
       "@regshop/core/meta/state": ["libs/core/meta/state/src/index.ts"],
+      "@regshop/core/navigation/common": [
+        "libs/core/navigation/common/src/index.ts"
+      ],
+      "@regshop/core/navigation/service": [
+        "libs/core/navigation/service/src/index.ts"
+      ],
+      "@regshop/core/navigation/ui/pipes": [
+        "libs/core/navigation/ui/pipes/src/index.ts"
+      ],
       "@regshop/core/utils/destroy": ["libs/core/utils/destroy/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }

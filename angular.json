@@ -11,6 +11,9 @@
     "core-meta-common": "libs/core/meta/common",
     "core-meta-service": "libs/core/meta/service",
     "core-meta-state": "libs/core/meta/state",
+    "core-navigation-common": "libs/core/navigation/common",
+    "core-navigation-service": "libs/core/navigation/service",
+    "core-navigation-ui-pipes": "libs/core/navigation/ui/pipes",
     "core-utils-destroy": "libs/core/utils/destroy",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e"
