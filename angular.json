@@ -24,6 +24,7 @@
     "core-utils-destroy": "libs/core/utils/destroy",
     "core-utils-operators": "libs/core/utils/operators",
     "core-utils-types": "libs/core/utils/types",
+    "core-window-service": "libs/core/window/service",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e"
   }

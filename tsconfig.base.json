@@ -53,6 +53,7 @@
         "libs/core/utils/operators/src/index.ts"
       ],
       "@regshop/core/utils/types": ["libs/core/utils/types/src/index.ts"],
+      "@regshop/core/window/service": ["libs/core/window/service/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }
   },
