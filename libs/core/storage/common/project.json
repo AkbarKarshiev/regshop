@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/core/storage/common",
+  "sourceRoot": "libs/core/storage/common/src",
+  "prefix": "regshop",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/core/storage/common"],
+      "options": {
+        "jestConfig": "libs/core/storage/common/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/storage/common/src/**/*.ts",
+          "libs/core/storage/common/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

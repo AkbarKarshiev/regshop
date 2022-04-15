@@ -39,6 +39,12 @@
       "@regshop/core/platform/service": [
         "libs/core/platform/service/src/index.ts"
       ],
+      "@regshop/core/storage/common": ["libs/core/storage/common/src/index.ts"],
+      "@regshop/core/storage/local": ["libs/core/storage/local/src/index.ts"],
+      "@regshop/core/storage/memory": ["libs/core/storage/memory/src/index.ts"],
+      "@regshop/core/storage/session": [
+        "libs/core/storage/session/src/index.ts"
+      ],
       "@regshop/core/utils/destroy": ["libs/core/utils/destroy/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }
