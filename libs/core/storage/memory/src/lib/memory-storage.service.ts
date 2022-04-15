@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { SyncStorage } from '@regshop/core/storage/common';
 
 @Injectable({
