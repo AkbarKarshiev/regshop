@@ -46,7 +46,13 @@
         "libs/core/storage/session/src/index.ts"
       ],
       "@regshop/core/store/root": ["libs/core/store/root/src/index.ts"],
+      "@regshop/core/store/testing": ["libs/core/store/testing/src/index.ts"],
+      "@regshop/core/testing": ["libs/core/testing/src/index.ts"],
       "@regshop/core/utils/destroy": ["libs/core/utils/destroy/src/index.ts"],
+      "@regshop/core/utils/operators": [
+        "libs/core/utils/operators/src/index.ts"
+      ],
+      "@regshop/core/utils/types": ["libs/core/utils/types/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }
   },
