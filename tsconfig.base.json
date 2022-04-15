@@ -45,6 +45,7 @@
       "@regshop/core/storage/session": [
         "libs/core/storage/session/src/index.ts"
       ],
+      "@regshop/core/store/root": ["libs/core/store/root/src/index.ts"],
       "@regshop/core/utils/destroy": ["libs/core/utils/destroy/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }

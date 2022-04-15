@@ -19,6 +19,7 @@
     "core-storage-local": "libs/core/storage/local",
     "core-storage-memory": "libs/core/storage/memory",
     "core-storage-session": "libs/core/storage/session",
+    "core-store-root": "libs/core/store/root",
     "core-utils-destroy": "libs/core/utils/destroy",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e"
