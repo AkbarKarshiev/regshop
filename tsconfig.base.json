@@ -36,6 +36,9 @@
       "@regshop/core/navigation/ui/pipes": [
         "libs/core/navigation/ui/pipes/src/index.ts"
       ],
+      "@regshop/core/platform/service": [
+        "libs/core/platform/service/src/index.ts"
+      ],
       "@regshop/core/utils/destroy": ["libs/core/utils/destroy/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"]
     }
