@@ -26,6 +26,8 @@
     "core-utils-types": "libs/core/utils/types",
     "core-window-service": "libs/core/window/service",
     "store": "apps/store",
-    "store-e2e": "apps/store-e2e"
+    "store-e2e": "apps/store-e2e",
+    "ui-carousel": "libs/ui/carousel",
+    "ui-image": "libs/ui/image"
   }
 }
