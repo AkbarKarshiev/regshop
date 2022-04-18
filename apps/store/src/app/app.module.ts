@@ -9,6 +9,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from '@regshop/ui/carousel';
+import { UiContainerModule } from '@regshop/ui/container';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -27,7 +28,8 @@ import { CarouselModule } from '@regshop/ui/carousel';
     EffectsModule.forRoot([]),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    UiContainerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

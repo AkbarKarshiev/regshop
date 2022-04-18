@@ -56,6 +56,7 @@
       "@regshop/core/window/service": ["libs/core/window/service/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"],
       "@regshop/ui/carousel": ["libs/ui/carousel/src/index.ts"],
+      "@regshop/ui/container": ["libs/ui/container/src/index.ts"],
       "@regshop/ui/image": ["libs/ui/image/src/index.ts"]
     }
   },
