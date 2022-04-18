@@ -8,6 +8,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from '@regshop/ui/carousel';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -19,13 +20,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         metaReducers: !environment.production ? [] : [],
         runtimeChecks: {
           strictActionImmutability: true,
-          strictStateImmutability: true,
-        },
+          strictStateImmutability: true
+        }
       }
     ),
     EffectsModule.forRoot([]),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],
