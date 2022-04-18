@@ -1,8 +1,23 @@
 
 <regshop-container>
-    <regshop-carousel
-        [images]="images"
-    >
-    </regshop-carousel>
-    <div style="width: 100px; height: 100px; background-color: green"></div>
+    <regshop-row web>
+        <regshop-column web="4">
+            <regshop-carousel
+                [images]="images"
+            >
+            </regshop-carousel>
+        </regshop-column>
+        <regshop-column web="4">
+            <regshop-carousel
+                [images]="images"
+            >
+            </regshop-carousel>
+        </regshop-column>
+        <regshop-column web="4">
+            <regshop-carousel
+                [images]="images"
+            >
+            </regshop-carousel>
+        </regshop-column>
+    </regshop-row>
 </regshop-container>

@@ -6,4 +6,4 @@ import { ContainerComponent } from './container.component';
   declarations: [ContainerComponent],
   exports: [ContainerComponent]
 })
-export class UiContainerModule {}
+export class ContainerModule {}

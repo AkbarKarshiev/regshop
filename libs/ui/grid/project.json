@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/ui/grid",
+  "sourceRoot": "libs/ui/grid/src",
+  "prefix": "regshop",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui/grid"],
+      "options": {
+        "jestConfig": "libs/ui/grid/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/grid/src/**/*.ts",
+          "libs/ui/grid/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
