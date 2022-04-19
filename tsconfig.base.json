@@ -58,7 +58,8 @@
       "@regshop/ui/carousel": ["libs/ui/carousel/src/index.ts"],
       "@regshop/ui/container": ["libs/ui/container/src/index.ts"],
       "@regshop/ui/grid": ["libs/ui/grid/src/index.ts"],
-      "@regshop/ui/image": ["libs/ui/image/src/index.ts"]
+      "@regshop/ui/image": ["libs/ui/image/src/index.ts"],
+      "@regshop/ui/link": ["libs/ui/link/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
