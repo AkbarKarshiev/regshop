@@ -9,16 +9,16 @@ export class EnvironmentService {
 
   constructor(@Optional() @Inject(ENVIRONMENTS) environments: Environments | null) {
     this.environments = environments ?? ENVIRONMENTS_DEFAULT;
-    
+
     this.environments = {
       ...(environments ?? ENVIRONMENTS_DEFAULT),
       google: {
-        // @ts-ignore
-        key: process.env['GOOGLE_KEY'] ?? '',
-        // @ts-ignore
-        id: process.env['GOOGLE_ID'] ?? '',
-        // @ts-ignore
-        name: process.env['GOOGLE_NAME'] ?? '',
+        // key: process.env['GOOGLE_KEY'] ?? '',
+        // id: process.env['GOOGLE_ID'] ?? '',
+        // name: process.env['GOOGLE_NAME'] ?? '',
+        key: '',
+        id: '',
+        name: '',
       },
     };
   }
