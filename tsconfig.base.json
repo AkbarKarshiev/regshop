@@ -60,7 +60,8 @@
       "@regshop/ui/grid": ["libs/ui/grid/src/index.ts"],
       "@regshop/ui/image": ["libs/ui/image/src/index.ts"],
       "@regshop/ui/link": ["libs/ui/link/src/index.ts"],
-      "@regshop/ui/multiplatform": ["libs/ui/multiplatform/src/index.ts"]
+      "@regshop/ui/multiplatform": ["libs/ui/multiplatform/src/index.ts"],
+      "@regshop/ui/width": ["libs/ui/width/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

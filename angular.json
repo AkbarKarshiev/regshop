@@ -32,6 +32,7 @@
     "ui-grid": "libs/ui/grid",
     "ui-image": "libs/ui/image",
     "ui-link": "libs/ui/link",
-    "ui-multiplatform": "libs/ui/multiplatform"
+    "ui-multiplatform": "libs/ui/multiplatform",
+    "ui-width": "libs/ui/width"
   }
 }
