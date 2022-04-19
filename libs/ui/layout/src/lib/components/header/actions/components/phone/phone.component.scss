@@ -1,0 +1,21 @@
+@use '@angular/material' as mat;
+@use 'libs/ui/stylesheets/variables' as store;
+@use 'libs/ui/stylesheets/mixins' as store-mixins;
+
+:host {
+    font-size: 1rem;
+    font-weight: 500;
+
+    @include store-mixins.media-web() {
+        font-size: 1.25rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: store.$color-default;
+
+    &:hover {
+        color: mat.get-color-from-palette(mat.$indigo-palette, 700);
+    }
+}
