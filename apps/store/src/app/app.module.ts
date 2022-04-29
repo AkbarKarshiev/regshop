@@ -10,6 +10,7 @@ import { GridModule } from '@regshop/ui/grid';
 import { HeaderModule } from '../../../../libs/ui/layout/src/lib/components/header/header.module';
 import { AppCoreModule } from './app.core.module';
 import { RouterModule } from '@angular/router';
+import { FooterModule } from '../../../../libs/ui/layout/src/lib/components/footer/footer.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
     GridModule,
     HeaderModule,
     AppCoreModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([]),
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
