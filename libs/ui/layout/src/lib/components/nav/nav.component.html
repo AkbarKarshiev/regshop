@@ -1,0 +1,23 @@
+<regshop-nav-link automation-id="nav-link" *ngFor="let link of links; trackBy: trackByFn">
+    <a
+        mat-button
+        #rla="routerLinkActive"
+        routerLinkActive
+        [attr.aria-label]="link.label"
+        [class.is-active]="rla.isActive"
+        [routerLinkActiveOptions]="link.routerLinkActiveOptions || { exact: false }"
+        [routerLink]="link.route | path"
+    >
+        <mat-icon>{{ link.label }}</mat-icon>
+    </a>
+</regshop-nav-link>
+<regshop-nav-link automation-id="nav-link" class="phone">
+    <a
+        aria-label="Call to phone"
+        i18n-aria-label="Layout|Call to phone"
+        mat-button
+        href="tel:"
+    >
+        <mat-icon>phone</mat-icon>
+    </a>
+</regshop-nav-link>
