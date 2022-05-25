@@ -25,6 +25,8 @@
     "core-utils-operators": "libs/core/utils/operators",
     "core-utils-types": "libs/core/utils/types",
     "core-window-service": "libs/core/window/service",
+    "products-api": "libs/products/api",
+    "products-common": "libs/products/common",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e",
     "ui-carousel": "libs/ui/carousel",
