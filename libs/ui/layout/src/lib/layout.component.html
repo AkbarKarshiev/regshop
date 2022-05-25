@@ -1,0 +1,32 @@
+<ng-container [ngSwitch]="layoutTypes$ | async">
+    <ng-container *ngSwitchDefault>
+        <div>
+            <regshop-header></regshop-header>
+            <main automation-id="handset">
+                <ng-container *ngTemplateOutlet="template"></ng-container>
+            </main>
+        </div>
+        <regshop-menu></regshop-menu>
+    </ng-container>
+    <ng-container *ngSwitchCase="breakpoints.Tablet">
+        <regshop-sidebar></regshop-sidebar>
+        <main automation-id="tablet">
+            <ng-container *ngTemplateOutlet="template; context: { mode: 'fluid' }"></ng-container>
+        </main>
+    </ng-container>
+    <ng-container *ngSwitchCase="breakpoints.Web">
+        <regshop-header></regshop-header>
+        <main automation-id="web">
+            <ng-container *ngTemplateOutlet="template"></ng-container>
+        </main>
+        <regshop-footer></regshop-footer>
+    </ng-container>
+</ng-container>
+
+<ng-template #template let-mode="mode">
+    <router-outlet name="top"></router-outlet>
+    <regshop-container [mode]="mode">
+        <router-outlet></router-outlet>
+    </regshop-container>
+    <router-outlet name="bottom"></router-outlet>
+</ng-template>
