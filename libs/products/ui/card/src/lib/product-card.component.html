@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title automation-id="title">{{ product.title }}</mat-card-title>
+        <mat-card-subtitle automation-id="subtitle">{{ product.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <regshop-carousel
+        automation-id="carousel"
+        [images]="product.photos"
+        (clicked)="detailsLink._elementRef.nativeElement.click()"
+    >
+    </regshop-carousel>
+    <mat-card-content>
+        <regshop-price automation-id="price">{{ product.price | currency }}</regshop-price>
+        <p automation-id="description">{{ product.description }}</p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <a #detailsLink automation-id="details" mat-button i18n="Product card|Details link" [routerLink]="product | productPath">Details</a>
+        <button automation-id="buy" mat-button i18n="Product card|Buy link" (click)="onAdd()">Buy</button>
+    </mat-card-actions>
+</mat-card>
