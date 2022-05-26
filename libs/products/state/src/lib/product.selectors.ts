@@ -1,0 +1,25 @@
+import { createFeatureSelector, createSelector } from '@ngrx/store';
+
+import { PRODUCT_FEATURE_KEY, ProductState, productAdapter } from './product.reducer';
+
+// Lookup the 'Product' feature state managed by NgRx
+export const selectProductState = createFeatureSelector<ProductState>(PRODUCT_FEATURE_KEY);
+
+const { selectAll, selectEntities } = productAdapter.getSelectors();
+
+export const selectProducts = createSelector(selectProductState, (state: ProductState) => selectAll(state));
+
+export const selectProductsEntities = createSelector(selectProductState, (state: ProductState) => selectEntities(state));
+
+export const selectLoaded = createSelector(selectProductState, (state: ProductState) => state.loaded);
+
+export const selectSelectedId = createSelector(selectProductState, (state) => state.selectedId);
+
+export const selectSelectedProduct = createSelector(selectProductsEntities, selectSelectedId, (entities, selectedId) =>
+  selectedId ? entities[selectedId] : null
+);
+
+export const selectProduct = (id: number) => createSelector(selectProductsEntities, (entities) => entities[id] ?? null);
+
+export const selectProductBySlug = (slug: string) =>
+  createSelector(selectProducts, (products) => products.find((product) => product.slug === slug) ?? null);
