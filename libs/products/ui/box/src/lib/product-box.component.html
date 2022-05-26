@@ -1,0 +1,12 @@
+<regshop-row tablet>
+    <regshop-column tablet="6" web="5">
+        <regshop-carousel automation-id="carousel" [images]="product.photos"></regshop-carousel>
+    </regshop-column>
+    <regshop-column tablet="6" web="7">
+        <h3 automation-id="title">{{ product.title }}</h3>
+        <h4 automation-id="subtitle">{{ product.subtitle }}</h4>
+        <p automation-id="price">{{ product.price | currency }}</p>
+        <p automation-id="description">{{ product.description }}</p>
+        <ng-content></ng-content>
+    </regshop-column>
+</regshop-row>

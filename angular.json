@@ -28,6 +28,7 @@
     "products-api": "libs/products/api",
     "products-common": "libs/products/common",
     "products-state": "libs/products/state",
+    "products-ui-box": "libs/products/ui/box",
     "products-ui-card": "libs/products/ui/card",
     "products-ui-list": "libs/products/ui/list",
     "store": "apps/store",

@@ -58,6 +58,7 @@
       "@regshop/products/api": ["libs/products/api/src/index.ts"],
       "@regshop/products/common": ["libs/products/common/src/index.ts"],
       "@regshop/products/state": ["libs/products/state/src/index.ts"],
+      "@regshop/products/ui/box": ["libs/products/ui/box/src/index.ts"],
       "@regshop/products/ui/card": ["libs/products/ui/card/src/index.ts"],
       "@regshop/products/ui/list": ["libs/products/ui/list/src/index.ts"],
       "@regshop/ui/carousel": ["libs/ui/carousel/src/index.ts"],
