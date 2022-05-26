@@ -1,0 +1,5 @@
+<regshop-row automation-id="row" tablet *ngIf="products$ | async as products">
+    <regshop-column tablet="6" web="4" *ngFor="let product of products; trackBy: trackByFn">
+        <regshop-product-card automation-id="card" [product]="product"></regshop-product-card>
+    </regshop-column>
+</regshop-row>

@@ -23,5 +23,8 @@ import { ProductCardComponent } from './product-card.component';
   declarations: [
     ProductCardComponent
   ],
+  exports: [
+    ProductCardComponent
+  ]
 })
 export class ProductCardModule {}

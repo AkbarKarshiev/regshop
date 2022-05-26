@@ -1,0 +1,32 @@
+@use 'libs/ui/stylesheets/mixins' as store-mixins;
+
+:host {
+    regshop-row {
+        align-items: stretch;
+    }
+
+    regshop-column {
+        margin-bottom: 1rem;
+    }
+
+    @include store-mixins.media-tablet() {
+        regshop-row {
+            margin: 0 -0.5rem;
+        }
+
+        regshop-column {
+            padding: 0 .5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    @include store-mixins.media-web() {
+        regshop-row {
+            margin: 0 -1rem;
+        }
+
+        regshop-column {
+            margin-bottom: 2rem;
+        }
+    }
+}
