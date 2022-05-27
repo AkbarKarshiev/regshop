@@ -5,7 +5,13 @@
     <regshop-column tablet="5" web="4">
         <regshop-container mode="fluid">
             <regshop-product-title automation-id="title">{{ product.title }}</regshop-product-title>
-            
+            <regshop-product-subtitle automation-id="subtitle">{{ product.subtitle }}</regshop-product-subtitle>
+            <regshop-product-price automation-id="price">{{ product.price | currency }}</regshop-product-price>
+            <regshop-product-promo automation-id="promo">
+              <strong i18n="Product portlet|Product promo">This product is excluded from all promotional discounts and offers.</strong>
+            </regshop-product-promo>
+            <regshop-product-sizes automation-id="sizes" [sizes]="product.sizes" [control]="control"></regshop-product-sizes>
+            <regshop-product-add-to-bag automation-id="add-to-bag" [product]="product" [control]="control"></regshop-product-add-to-bag>
         </regshop-container>
     </regshop-column>
 </regshop-row>

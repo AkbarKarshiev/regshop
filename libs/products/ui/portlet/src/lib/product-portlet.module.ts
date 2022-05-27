@@ -8,6 +8,11 @@ import { ContainerModule } from '@regshop/ui/container';
 
 import { ProductPortletComponent } from './product-portlet.component';
 import { ProductTitleModule } from './components/product-title/product-title.module';
+import { ProductSubtitleModule } from './components/product-subtitle/product-subtitle.module';
+import { ProductPriceModule } from './components/product-price/product-price.module';
+import { ProductPromoModule } from './components/product-promo/product-promo.module';
+import { ProductSizesModule } from './components/product-sizes/product-sizes.module';
+import { ProductAddToBagModule } from './components/product-add-to-bag/product-add-to-bag.module';
 
 @NgModule({
   imports: [
@@ -16,7 +21,12 @@ import { ProductTitleModule } from './components/product-title/product-title.mod
     ContainerModule,
     CarouselModule,
     GridModule,
-    ProductTitleModule
+    ProductTitleModule,
+    ProductSubtitleModule,
+    ProductPriceModule,
+    ProductPromoModule,
+    ProductSizesModule,
+    ProductAddToBagModule
   ],
   declarations: [ProductPortletComponent],
   exports: [ProductPortletComponent]
