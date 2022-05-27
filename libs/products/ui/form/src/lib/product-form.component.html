@@ -1,0 +1,17 @@
+<regshop-row tablet automation-id="form">
+    <regshop-column tablet="6">
+        <regshop-product-size
+            automation-id="size"
+            [control]="form | regshopExtractFormControl: fields.Size"
+            [sizes]="product.sizes"
+        >
+        </regshop-product-size>
+    </regshop-column>
+    <regshop-column tablet="6">
+        <regshop-product-count
+            automation-id="count"
+            [control]="form | regshopExtractFormControl: fields.Count"
+        >
+        </regshop-product-count>
+    </regshop-column>
+</regshop-row>
