@@ -1,0 +1,11 @@
+<regshop-row tablet [noPadding]="true" *ngIf="product$ | async; let product">
+    <regshop-column tablet="7" web="8">
+        <regshop-carousel automation-id="carousel" [images]="product.photos"></regshop-carousel>
+    </regshop-column>
+    <regshop-column tablet="5" web="4">
+        <regshop-container mode="fluid">
+            <regshop-product-title automation-id="title">{{ product.title }}</regshop-product-title>
+            
+        </regshop-container>
+    </regshop-column>
+</regshop-row>

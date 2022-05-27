@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+@use 'libs/ui/stylesheets/mixins' as store-mixins;
+
+regshop-column {
+    background-color: #edeff0;
+    background-image: url('apps/store/src/assets/images/products/bg.png');
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+
+    & + regshop-column {
+        background-color: white;
+        background-image: none;
+    }
+}
+
+regshop-carousel {
+    margin: auto;
+    height: 20rem;
+    width: 20rem;
+    max-width: 100%;
+
+    @include store-mixins.media-tablet() {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    @include store-mixins.media-web() {
+        height: 40rem;
+        width: 40rem;
+    }
+}

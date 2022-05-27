@@ -32,6 +32,7 @@
     "products-ui-card": "libs/products/ui/card",
     "products-ui-form": "libs/products/ui/form",
     "products-ui-list": "libs/products/ui/list",
+    "products-ui-portlet": "libs/products/ui/portlet",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e",
     "ui-carousel": "libs/ui/carousel",

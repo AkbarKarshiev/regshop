@@ -1,0 +1,24 @@
+<ng-container regshopExtractTouched [control]="control">
+    <p automation-id="title" i18n="Product portlet|Available sizes">Available sizes</p>
+    <div automation-id="sizes" class="sizes">
+        <button
+            *ngFor="let size of sizes"
+            automation-id="button"
+            aria-label="Select"
+            i18n-aria-label="Product portlet|Select size area label"
+            mat-raised-button
+            [class.mat-primary]="size === active"
+            (click)="onSelect(size)"
+        >
+            {{ size }}
+        </button>
+    </div>
+    <div
+        *ngIf="control?.touched && control?.invalid"
+        automation-id="error"
+        class="sizes-error"
+        i18n="Product portlet|Select size"
+    >
+        Please select your size
+    </div>
+</ng-container>
