@@ -11,15 +11,7 @@ export class EnvironmentService {
     this.environments = environments ?? ENVIRONMENTS_DEFAULT;
 
     this.environments = {
-      ...(environments ?? ENVIRONMENTS_DEFAULT),
-      google: {
-        // key: process.env['GOOGLE_KEY'] ?? '',
-        // id: process.env['GOOGLE_ID'] ?? '',
-        // name: process.env['GOOGLE_NAME'] ?? '',
-        key: '',
-        id: '',
-        name: '',
-      },
+      ...(environments ?? ENVIRONMENTS_DEFAULT)
     };
   }
 

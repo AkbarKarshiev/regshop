@@ -1,7 +1,6 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
 import { Environments } from '@regshop/core/environments/service';
 
 export const environment: Environments = {
@@ -9,6 +8,11 @@ export const environment: Environments = {
   brand: 'Regshop',
   phone: '998994689745',
   appHost: 'http://localhost',
+  google: {
+    key: 'AIzaSyARUMuBzVChz0sn-_6KlkujcTdEby7rkDo',
+    name: 'products',
+    id: '1StkM29e11O2MBsKNj_YvacxN-G9nnRf_6rStDviMJqU'
+  }
 };
 
 /*
