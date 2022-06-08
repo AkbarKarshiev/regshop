@@ -17,6 +17,7 @@
     "paths": {
       "@regshop/cart/common": ["libs/cart/common/src/index.ts"],
       "@regshop/cart/state": ["libs/cart/state/src/index.ts"],
+      "@regshop/cart/ui/pipes": ["libs/cart/ui/pipes/src/index.ts"],
       "@regshop/core/api/service": ["libs/core/api/service/src/index.ts"],
       "@regshop/core/environments/service": [
         "libs/core/environments/service/src/index.ts"
