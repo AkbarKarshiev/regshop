@@ -1,6 +1,8 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
+import { CartFacade } from '@regshop/cart/state';
+
 import { Product } from '@regshop/products/common';
 import { ProductAddToBagService } from './product-add-to-bag.service';
 
