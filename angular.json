@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "cart-common": "libs/cart/common",
     "core-api-service": "libs/core/api/service",
     "core-environments-service": "libs/core/environments/service",
     "core-forms-extract": "libs/core/forms/extract",
