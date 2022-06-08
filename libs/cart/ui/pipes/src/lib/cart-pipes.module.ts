@@ -14,4 +14,4 @@ const pipes = [
   declarations: pipes,
   exports: pipes
 })
-export class CartUiPipesModule {}
+export class CartPipesModule {}

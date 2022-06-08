@@ -1,0 +1,56 @@
+<regshop-multiplatform *ngIf="cartProduct.productId | productById | async; let product">
+  <ng-container handset>
+    <regshop-card-title automation-id="handset" [product]="product"></regshop-card-title>
+    <regshop-row handset>
+      <regshop-column handset="6">
+        <regshop-card-preview automation-id="handset" [images]="product.photos" [product]="product"></regshop-card-preview>
+      </regshop-column>
+      <regshop-column handset="6">
+        <div>
+          <regshop-card-count automation-id="handset" [cartProduct]="cartProduct"></regshop-card-count>
+          <regshop-card-price automation-id="handset">{{ cartProduct | cartProductPrice: product | currency }}</regshop-card-price>
+        </div>
+        <regshop-card-remove automation-id="handset" [cartProduct]="cartProduct"></regshop-card-remove>
+      </regshop-column>
+    </regshop-row>
+  </ng-container>
+  <ng-container tablet>
+    <regshop-row tablet>
+      <regshop-column tablet="5">
+        <regshop-card-preview automation-id="tablet" [images]="product.photos" [product]="product"></regshop-card-preview>
+      </regshop-column>
+      <regshop-column handset="7">
+        <div>
+          <regshop-card-title automation-id="tablet" [product]="product"></regshop-card-title>
+          <regshop-card-price automation-id="tablet">{{ cartProduct | cartProductPrice: product | currency }}</regshop-card-price>
+          <regshop-card-description automation-id="tablet">{{ product.description }}</regshop-card-description>
+          <regshop-card-count automation-id="tablet" [cartProduct]="cartProduct"></regshop-card-count>
+        </div>
+        <regshop-card-remove automation-id="tablet" [cartProduct]="cartProduct"></regshop-card-remove>
+      </regshop-column>
+    </regshop-row>
+  </ng-container>
+  <ng-container web>
+    <regshop-row web>
+      <regshop-column tablet="4">
+        <regshop-card-preview automation-id="web" [images]="product.photos" [product]="product"></regshop-card-preview>
+      </regshop-column>
+      <regshop-column handset="8">
+        <div>
+          <regshop-card-title automation-id="web" [product]="product"></regshop-card-title>
+          <regshop-card-description automation-id="web">{{ product.subtitle  }}</regshop-card-description>
+          <regshop-card-description automation-id="web">{{ product.description }}</regshop-card-description>
+          <regshop-card-price automation-id="web">{{ cartProduct | cartProductPrice: product | currency }}</regshop-card-price>
+        </div>
+        <regshop-row web>
+          <regshop-column tablet="8">
+            <regshop-card-count automation-id="web" [cartProduct]="cartProduct"></regshop-card-count>
+          </regshop-column>
+          <regshop-column handset="4">
+            <regshop-card-remove automation-id="web" [cartProduct]="cartProduct"></regshop-card-remove>
+          </regshop-column>
+        </regshop-row>
+      </regshop-column>
+    </regshop-row>
+  </ng-container>
+</regshop-multiplatform>

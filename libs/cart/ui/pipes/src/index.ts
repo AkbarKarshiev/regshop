@@ -1,1 +1,1 @@
-export * from './lib/cart-ui-pipes.module';
+export * from './lib/cart-pipes.module';

@@ -17,6 +17,7 @@
     "paths": {
       "@regshop/cart/common": ["libs/cart/common/src/index.ts"],
       "@regshop/cart/state": ["libs/cart/state/src/index.ts"],
+      "@regshop/cart/ui/card": ["libs/cart/ui/card/src/index.ts"],
       "@regshop/cart/ui/pipes": ["libs/cart/ui/pipes/src/index.ts"],
       "@regshop/core/api/service": ["libs/core/api/service/src/index.ts"],
       "@regshop/core/environments/service": [
@@ -67,6 +68,7 @@
       "@regshop/products/ui/card": ["libs/products/ui/card/src/index.ts"],
       "@regshop/products/ui/form": ["libs/products/ui/form/src/index.ts"],
       "@regshop/products/ui/list": ["libs/products/ui/list/src/index.ts"],
+      "@regshop/products/ui/pipes": ["libs/products/ui/pipes/src/index.ts"],
       "@regshop/products/ui/portlet": ["libs/products/ui/portlet/src/index.ts"],
       "@regshop/ui/carousel": ["libs/ui/carousel/src/index.ts"],
       "@regshop/ui/container": ["libs/ui/container/src/index.ts"],

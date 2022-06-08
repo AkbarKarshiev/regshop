@@ -1,0 +1,18 @@
+@use 'libs/ui/stylesheets/variables' as store;
+@use 'libs/ui/stylesheets/mixins' as store-mixins;
+
+a {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: store.$color-default;
+
+  &:hover {
+    color: store.$color-primary;
+  }
+
+  @include store-mixins.media-web() {
+    font-size: 1.25rem;
+  }
+}

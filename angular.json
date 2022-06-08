@@ -3,6 +3,7 @@
   "projects": {
     "cart-common": "libs/cart/common",
     "cart-state": "libs/cart/state",
+    "cart-ui-card": "libs/cart/ui/card",
     "cart-ui-pipes": "libs/cart/ui/pipes",
     "core-api-service": "libs/core/api/service",
     "core-environments-service": "libs/core/environments/service",
@@ -37,6 +38,7 @@
     "products-ui-card": "libs/products/ui/card",
     "products-ui-form": "libs/products/ui/form",
     "products-ui-list": "libs/products/ui/list",
+    "products-ui-pipes": "libs/products/ui/pipes",
     "products-ui-portlet": "libs/products/ui/portlet",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e",
