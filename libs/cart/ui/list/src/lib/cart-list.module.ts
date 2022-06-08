@@ -12,4 +12,4 @@ import { CartListComponent } from './cart-list.component';
   declarations: [CartListComponent],
   exports: [CartListComponent]
 })
-export class CartUiListModule {}
+export class CartListModule {}
