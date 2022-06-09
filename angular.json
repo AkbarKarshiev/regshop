@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "cart-common": "libs/cart/common",
+    "cart-page": "libs/cart/page",
     "cart-state": "libs/cart/state",
     "cart-ui-add": "libs/cart/ui/add",
     "cart-ui-card": "libs/cart/ui/card",

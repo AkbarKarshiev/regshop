@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@regshop/cart/common": ["libs/cart/common/src/index.ts"],
+      "@regshop/cart/page": ["libs/cart/page/src/index.ts"],
       "@regshop/cart/state": ["libs/cart/state/src/index.ts"],
       "@regshop/cart/ui/add": ["libs/cart/ui/add/src/index.ts"],
       "@regshop/cart/ui/card": ["libs/cart/ui/card/src/index.ts"],
