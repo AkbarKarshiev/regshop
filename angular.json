@@ -3,6 +3,7 @@
   "projects": {
     "cart-common": "libs/cart/common",
     "cart-state": "libs/cart/state",
+    "cart-ui-add": "libs/cart/ui/add",
     "cart-ui-card": "libs/cart/ui/card",
     "cart-ui-info": "libs/cart/ui/info",
     "cart-ui-list": "libs/cart/ui/list",

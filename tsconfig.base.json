@@ -17,6 +17,7 @@
     "paths": {
       "@regshop/cart/common": ["libs/cart/common/src/index.ts"],
       "@regshop/cart/state": ["libs/cart/state/src/index.ts"],
+      "@regshop/cart/ui/add": ["libs/cart/ui/add/src/index.ts"],
       "@regshop/cart/ui/card": ["libs/cart/ui/card/src/index.ts"],
       "@regshop/cart/ui/info": ["libs/cart/ui/info/src/index.ts"],
       "@regshop/cart/ui/list": ["libs/cart/ui/list/src/index.ts"],
