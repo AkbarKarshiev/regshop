@@ -33,6 +33,7 @@
     "core-utils-operators": "libs/core/utils/operators",
     "core-utils-types": "libs/core/utils/types",
     "core-window-service": "libs/core/window/service",
+    "orders-common": "libs/orders/common",
     "products-api": "libs/products/api",
     "products-common": "libs/products/common",
     "products-guards": "libs/products/guards",
