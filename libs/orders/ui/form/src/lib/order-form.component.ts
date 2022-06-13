@@ -7,6 +7,7 @@ import { NavigationService } from '@regshop/core/navigation/service';
 import { DestroyService } from '@regshop/core/utils/destroy';
 import { CustomerField } from '@regshop/orders/common';
 import { isNotNullOrUndefined } from '@regshop/core/utils/operators';
+import { OrderNotifyService } from '@regshop/orders/ui/notify';
 
 @Component({
   selector: 'regshop-order-form',
@@ -24,7 +25,7 @@ export class OrderFormComponent implements OnInit {
   constructor(
     private readonly changeDetectorRef: ChangeDetectorRef,
     private readonly orderFacade: OrderFacade,
-    private readonly orderNotifyService: any,
+    private readonly orderNotifyService: OrderNotifyService,
     private readonly navigationService: NavigationService,
     private readonly destroy$: DestroyService
   ) { }

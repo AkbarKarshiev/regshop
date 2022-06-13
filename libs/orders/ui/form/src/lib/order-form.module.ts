@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
 import { FormsExtractModule } from '@regshop/core/forms/extract';
+import { OrderNotifyModule } from '@regshop/orders/ui/notify';
 import { GridModule } from '@regshop/ui/grid';
 
 import { OrderNameModule } from './components/order-name/order-name.module';
@@ -21,6 +22,7 @@ import { OrderFormComponent } from './order-form.component';
     CommonModule,
     ReactiveFormsModule,
     GridModule,
+    OrderNotifyModule,
     MatCardModule,
     MatButtonModule,
     FormsExtractModule,
