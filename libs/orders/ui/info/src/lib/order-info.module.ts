@@ -15,5 +15,8 @@ import { OrderInfoComponent } from './order-info.component';
   declarations: [
     OrderInfoComponent
   ],
+  exports: [
+    OrderInfoComponent
+  ]
 })
 export class OrderInfoModule {}
