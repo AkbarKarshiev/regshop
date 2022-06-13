@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { $localize } from '@angular/localize/init';
 
 import { RouteData } from '@regshop/core/navigation/common';
 
