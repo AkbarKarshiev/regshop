@@ -35,6 +35,7 @@
     "core-window-service": "libs/core/window/service",
     "orders-api": "libs/orders/api",
     "orders-common": "libs/orders/common",
+    "orders-state": "libs/orders/state",
     "products-api": "libs/products/api",
     "products-common": "libs/products/common",
     "products-guards": "libs/products/guards",

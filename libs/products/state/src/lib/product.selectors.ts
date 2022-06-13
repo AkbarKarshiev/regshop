@@ -7,7 +7,7 @@ export const selectProductState = createFeatureSelector<ProductState>(PRODUCT_FE
 
 const { selectAll, selectEntities } = productAdapter.getSelectors();
 
-export const selectProducts = createSelector(selectProductState, (state: ProductState) => selectAll(state));
+export const selectProducts = createSelector(selectProductState, (state) => selectAll(state));
 
 export const selectProductsEntities = createSelector(selectProductState, (state: ProductState) => selectEntities(state));
 
