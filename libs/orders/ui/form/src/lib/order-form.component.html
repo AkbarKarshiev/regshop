@@ -1,0 +1,31 @@
+<mat-card>
+  <mat-card-title i18n="Order form|Title">Order Form</mat-card-title>
+  <mat-card-content>
+    <form automation-id="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <regshop-order-name automation-id="name" [control]="form | regshopExtractFormControl: fields.Name"></regshop-order-name>
+      <regshop-row tablet>
+        <regshop-column tablet="6">
+          <regshop-order-phone automation-id="phone" [control]="form | regshopExtractFormControl: fields.Phone"></regshop-order-phone>
+        </regshop-column>
+        <regshop-column tablet="6">
+          <regshop-order-email automation-id="email" [control]="form | regshopExtractFormControl: fields.Email"
+        </regshop-column>
+      </regshop-row>
+      <regshop-order-city automation-id="city" [control]="form | regshopExtractFormControl: fields.City"></regshop-order-city>
+      <regshop-order-address automation-id="address" [control]="form | regshopExtractFormControl: fields.Address"></regshop-order-address>
+      <regshop-order-postcode automation-id="postcode" [control]="form | regshopExtractFormControl: fields.Postcode"></regshop-order-postcode>
+      <regshop-order-actions>
+        <button
+          automation-id="submit"
+          type="submit"
+          mat-raised-button
+          color="primary"
+          i18n="Order form|Submit button"
+          [disabled]="submitted"
+        >
+          Order
+        </button>
+      </regshop-order-actions>
+    </form>
+  </mat-card-content>
+</mat-card>

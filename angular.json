@@ -36,6 +36,7 @@
     "orders-api": "libs/orders/api",
     "orders-common": "libs/orders/common",
     "orders-state": "libs/orders/state",
+    "orders-ui-form": "libs/orders/ui/form",
     "orders-ui-info": "libs/orders/ui/info",
     "products-api": "libs/products/api",
     "products-common": "libs/products/common",

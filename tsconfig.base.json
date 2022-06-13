@@ -66,6 +66,7 @@
       "@regshop/orders/api": ["libs/orders/api/src/index.ts"],
       "@regshop/orders/common": ["libs/orders/common/src/index.ts"],
       "@regshop/orders/state": ["libs/orders/state/src/index.ts"],
+      "@regshop/orders/ui/form": ["libs/orders/ui/form/src/index.ts"],
       "@regshop/orders/ui/info": ["libs/orders/ui/info/src/index.ts"],
       "@regshop/products/api": ["libs/products/api/src/index.ts"],
       "@regshop/products/common": ["libs/products/common/src/index.ts"],
