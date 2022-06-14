@@ -44,6 +44,7 @@
     "errors-pages": "libs/errors/pages",
     "errors-server-error-page": "libs/errors/server-error/page",
     "errors-ui-card": "libs/errors/ui/card",
+    "home-page": "libs/home/page",
     "orders-api": "libs/orders/api",
     "orders-common": "libs/orders/common",
     "orders-guards": "libs/orders/guards",

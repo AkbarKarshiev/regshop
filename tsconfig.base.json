@@ -78,6 +78,7 @@
       ],
       "@regshop/errors/ui/card": ["libs/errors/ui/card/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"],
+      "@regshop/home/page": ["libs/home/page/src/index.ts"],
       "@regshop/orders/api": ["libs/orders/api/src/index.ts"],
       "@regshop/orders/common": ["libs/orders/common/src/index.ts"],
       "@regshop/orders/guards": ["libs/orders/guards/src/index.ts"],
