@@ -1,13 +1,25 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
 import { ENVIRONMENTS } from '@regshop/core/environments/service';
-import { environment } from '../environments/environment';
 import { NAVIGATION_PATHS, PATHS } from '@regshop/core/navigation/common';
+import { RootStoreModule } from '@regshop/core/store/root';
+import { CartStateModule } from '@regshop/cart/state';
+import { MetaStateModule } from '@regshop/core/meta/state';
+import { ProductsStateModule } from '@regshop/products/state';
+
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    HttpClientModule,
+    RootStoreModule,
+    !environment.production ?StoreDevtoolsModule.instrument({ logOnly: environment.production }) : [],
+    CartStateModule,
+    MetaStateModule,
+    ProductsStateModule
   ],
   providers: [
     {
