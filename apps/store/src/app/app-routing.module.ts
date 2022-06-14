@@ -12,6 +12,10 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
+        path: NAVIGATION_PATHS.home,
+        loadChildren: () => import('@regshop/home/page').then((modules) => modules.HomePageModule),
+      },
+      {
         path: NAVIGATION_PATHS.product,
         canActivate: [ProductGuard],
         loadChildren: () => import('@regshop/products/page').then((modules) => modules.ProductPageModule),
