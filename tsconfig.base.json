@@ -23,6 +23,7 @@
       "@regshop/cart/ui/info": ["libs/cart/ui/info/src/index.ts"],
       "@regshop/cart/ui/list": ["libs/cart/ui/list/src/index.ts"],
       "@regshop/cart/ui/pipes": ["libs/cart/ui/pipes/src/index.ts"],
+      "@regshop/chat/common": ["libs/chat/common/src/index.ts"],
       "@regshop/core/api/service": ["libs/core/api/service/src/index.ts"],
       "@regshop/core/environments/service": [
         "libs/core/environments/service/src/index.ts"
