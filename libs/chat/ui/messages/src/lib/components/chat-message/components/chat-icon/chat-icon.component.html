@@ -1,0 +1,6 @@
+<img
+  automation-id="image"
+  [src]="chatMessage.isOwner | regshopChatIcon"
+  alt=""
+  *ngIf="chatMessage | regshopChatIconCan | async"
+/>
