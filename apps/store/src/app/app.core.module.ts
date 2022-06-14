@@ -8,6 +8,7 @@ import { RootStoreModule } from '@regshop/core/store/root';
 import { CartStateModule } from '@regshop/cart/state';
 import { MetaStateModule } from '@regshop/core/meta/state';
 import { ProductsStateModule } from '@regshop/products/state';
+import { ErrorsInterceptorsModule } from '@regshop/errors/interceptors';
 
 import { environment } from '../environments/environment';
 
@@ -18,6 +19,7 @@ import { environment } from '../environments/environment';
     RootStoreModule,
     !environment.production ?StoreDevtoolsModule.instrument({ logOnly: environment.production }) : [],
     CartStateModule,
+    ErrorsInterceptorsModule,
     MetaStateModule,
     ProductsStateModule
   ],

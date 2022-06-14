@@ -68,6 +68,7 @@
       ],
       "@regshop/core/utils/types": ["libs/core/utils/types/src/index.ts"],
       "@regshop/core/window/service": ["libs/core/window/service/src/index.ts"],
+      "@regshop/errors/interceptors": ["libs/errors/interceptors/src/index.ts"],
       "@regshop/errors/not-found/page": [
         "libs/errors/not-found/page/src/index.ts"
       ],
