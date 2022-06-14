@@ -12,4 +12,4 @@ import { ChatMessageModule } from './components/chat-message/chat-message.module
   declarations: [ChatMessagesComponent],
   exports: [ChatMessagesComponent]
 })
-export class ChatUiMessagesModule {}
+export class ChatMessagesModule {}

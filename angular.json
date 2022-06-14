@@ -10,6 +10,7 @@
     "cart-ui-list": "libs/cart/ui/list",
     "cart-ui-pipes": "libs/cart/ui/pipes",
     "chat-common": "libs/chat/common",
+    "chat-page": "libs/chat/page",
     "chat-state": "libs/chat/state",
     "chat-ui-form": "libs/chat/ui/form",
     "chat-ui-messages": "libs/chat/ui/messages",

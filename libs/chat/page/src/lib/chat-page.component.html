@@ -1,0 +1,7 @@
+<regshop-chat-messages
+  automation-id="messages"
+  [chatMessages]="chatMessage"
+  *ngIf="chatMessages$ | async; let chatMessage"
+>
+</regshop-chat-messages>
+<regshop-chat-form automation-id="form"></regshop-chat-form>

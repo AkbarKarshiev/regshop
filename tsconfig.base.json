@@ -24,6 +24,7 @@
       "@regshop/cart/ui/list": ["libs/cart/ui/list/src/index.ts"],
       "@regshop/cart/ui/pipes": ["libs/cart/ui/pipes/src/index.ts"],
       "@regshop/chat/common": ["libs/chat/common/src/index.ts"],
+      "@regshop/chat/page": ["libs/chat/page/src/index.ts"],
       "@regshop/chat/state": ["libs/chat/state/src/index.ts"],
       "@regshop/chat/ui/form": ["libs/chat/ui/form/src/index.ts"],
       "@regshop/chat/ui/messages": ["libs/chat/ui/messages/src/index.ts"],
