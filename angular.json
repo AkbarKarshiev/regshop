@@ -11,6 +11,7 @@
     "cart-ui-pipes": "libs/cart/ui/pipes",
     "chat-common": "libs/chat/common",
     "chat-state": "libs/chat/state",
+    "chat-ui-form": "libs/chat/ui/form",
     "core-api-service": "libs/core/api/service",
     "core-environments-service": "libs/core/environments/service",
     "core-forms-extract": "libs/core/forms/extract",
