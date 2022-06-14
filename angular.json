@@ -41,6 +41,7 @@
     "core-window-service": "libs/core/window/service",
     "errors-interceptors": "libs/errors/interceptors",
     "errors-not-found-page": "libs/errors/not-found/page",
+    "errors-pages": "libs/errors/pages",
     "errors-server-error-page": "libs/errors/server-error/page",
     "errors-ui-card": "libs/errors/ui/card",
     "orders-api": "libs/orders/api",
