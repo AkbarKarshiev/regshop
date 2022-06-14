@@ -29,6 +29,10 @@ const routes: Routes = [
         path: NAVIGATION_PATHS.support,
         loadChildren: () => import('@regshop/chat/page').then((modules) => modules.ChatPageModule),
       },
+      {
+        path: '',
+        loadChildren: () => import('@regshop/errors/pages').then((modules) => modules.ErrorsPagesModule),
+      },
     ]
   }
 ]
