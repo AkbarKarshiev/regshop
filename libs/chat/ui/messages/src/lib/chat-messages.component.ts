@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+
+import { ChatMessage } from '@regshop/chat/common';
 
 @Component({
   selector: 'regshop-chat-messages',
   templateUrl: './chat-messages.component.html',
-  styleUrls: ['./chat-messages.component.scss']
+  styleUrls: ['./chat-messages.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ChatMessagesComponent implements OnInit {
+export class ChatMessagesComponent {
+  @Input() chatMessages!: ChatMessage[];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  trackByFn(index: number, chatMessage: ChatMessage): number {
+    return chatMessage.id;
   }
-
 }
