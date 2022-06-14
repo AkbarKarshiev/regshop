@@ -68,6 +68,9 @@
       ],
       "@regshop/core/utils/types": ["libs/core/utils/types/src/index.ts"],
       "@regshop/core/window/service": ["libs/core/window/service/src/index.ts"],
+      "@regshop/errors/not-found/page": [
+        "libs/errors/not-found/page/src/index.ts"
+      ],
       "@regshop/errors/ui/card": ["libs/errors/ui/card/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"],
       "@regshop/orders/api": ["libs/orders/api/src/index.ts"],

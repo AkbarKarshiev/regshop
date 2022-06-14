@@ -39,6 +39,7 @@
     "core-utils-operators": "libs/core/utils/operators",
     "core-utils-types": "libs/core/utils/types",
     "core-window-service": "libs/core/window/service",
+    "errors-not-found-page": "libs/errors/not-found/page",
     "errors-ui-card": "libs/errors/ui/card",
     "orders-api": "libs/orders/api",
     "orders-common": "libs/orders/common",
