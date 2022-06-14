@@ -71,6 +71,9 @@
       "@regshop/errors/not-found/page": [
         "libs/errors/not-found/page/src/index.ts"
       ],
+      "@regshop/errors/server-error/page": [
+        "libs/errors/server-error/page/src/index.ts"
+      ],
       "@regshop/errors/ui/card": ["libs/errors/ui/card/src/index.ts"],
       "@regshop/forms/extract": ["libs/forms/extract/src/index.ts"],
       "@regshop/orders/api": ["libs/orders/api/src/index.ts"],

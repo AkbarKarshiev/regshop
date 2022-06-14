@@ -1,0 +1,12 @@
+<regshop-error-card color="primary" automation-id="card">
+  <regshop-error-code automation-id="code">500</regshop-error-code>
+  <regshop-error-title automation-id="title" i18n="Error server error|Title">Internal server error</regshop-error-title>
+  <regshop-error-description automation-id="description" i18n="Error server error|Description">
+    If you’re facing some issues while using our service you’re unable to solve yourself, please contact our customer service department by
+    sending a message to <a regshop-link [routerLink]="paths.support | path">support</a>. We’ll try to do our best as soon as we’ll consider
+    your appeal.
+  </regshop-error-description>
+  <regshop-error-links automation-id="links">
+    <a mat-raised-button color="warn" [routerLink]="paths.home | path" i18n="Error page|Link home">Go to the home page</a>
+  </regshop-error-links>
+</regshop-error-card>
