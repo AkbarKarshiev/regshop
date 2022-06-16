@@ -12,7 +12,6 @@ export class ProductAddToBagService {
   constructor(private readonly matDialog: MatDialog, private readonly layoutService: LayoutService) { }
 
   open(product: Product): void {
-    console.log(this.params);
     this.matDialog.open(ProductAddToBagDialogComponent, {
       ...this.params,
       data: { product },

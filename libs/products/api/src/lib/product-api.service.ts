@@ -3,7 +3,7 @@ import { map, Observable, of } from 'rxjs';
 
 import { ApiService } from '@regshop/core/api/service';
 import { EnvironmentService } from '@regshop/core/environments/service';
-import { Product, ProductsResponse } from '../../../common/src/lib/product.interface';
+import { Product, ProductsResponse } from '@regshop/products/common';
 
 export const PRODUCT_API_ROUTES = {
   load: (payload: { id: string; name: string; key: string } | undefined) => {
@@ -24,7 +24,7 @@ export function castProduct(response: ProductsResponse): Product[] {
     price: Number(price.trim()),
     sizes: sizes.split(',').map((size) => Number(size.trim())),
     description: description.trim(),
-    photos: photos.split('\n').map((photo) => photo.trim()),
+    photos: photos.split(' ').map((photo) => photo.trim()),
   }));
 }
 
@@ -37,7 +37,7 @@ export class ProductApiService {
   ) { }
 
   load(): Observable<Product[]> {
-    if (this.environmentService.environments.google?.key) {
+    if (!this.environmentService.environments.google?.key) {
       console.warn('Google Sheet was not loaded. Check your envs.');
 
       return of([]);

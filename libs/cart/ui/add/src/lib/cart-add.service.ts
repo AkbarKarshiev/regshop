@@ -1,14 +1,14 @@
-import { Injectable } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { Breakpoints } from '@angular/cdk/layout';
+import { Injectable } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MatDialogConfig } from '@angular/material/dialog/dialog-config';
 
 import { LayoutService } from '@regshop/core/layout/service';
 import { Product } from '@regshop/products/common';
+
 import { CartAddDialogComponent } from './cart-add-dialog/cart-add-dialog.component';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CartAddService {
   constructor(private readonly matDialog: MatDialog, private readonly layoutService: LayoutService) { }
 

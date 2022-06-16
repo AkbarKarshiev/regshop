@@ -15,7 +15,6 @@ export class LogoComponent implements OnInit {
   constructor(private readonly environmentService: EnvironmentService, @Inject(PATHS) public readonly paths: NavigationPaths) { }
 
   ngOnInit(): void {
-    console.log(this.environmentService);
     this.brand = this.environmentService.environments.brand;
   }
 }

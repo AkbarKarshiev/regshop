@@ -1,5 +1,5 @@
 <ng-container *ngIf="cartProducts$ | async; let cartProducts">
-  <ng-container *ngif="cartProducts.length; else emptyCart">
+  <ng-container *ngIf="cartProducts.length; else emptyCart">
     <regshop-cart-card
       automation-id="card"
       [cartProduct]="cartProduct"
