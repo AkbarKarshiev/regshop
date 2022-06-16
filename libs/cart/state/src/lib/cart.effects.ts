@@ -75,9 +75,11 @@ export class CartEffects implements OnInitEffects {
   saveCartToLocalStorage$ = createEffect(() =>
     this.actions$.pipe(
       ofType(CartActions.addProductSuccess, CartActions.changeProductSuccess, CartActions.removeProductSuccess),
-      concatLatestFrom(() => this.store.select(CartSelectors.selectCartProductsEntities)),
+      concatLatestFrom(() => this.store.select(CartSelectors.selectCartProducts)),
       fetch({
-        run: (action, cartProducts) => this.localAsyncStorage.setItem(CartKeys.Cart, cartProducts)
+        run: (action, cartProducts) => {
+          this.localAsyncStorage.setItem(CartKeys.Cart, cartProducts);
+        }
       })
     )
   );
