@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 import { Product } from '@regshop/products/common';
+import { CartAddService } from '@regshop/cart/ui/add';
 
 @Component({
   selector: 'regshop-product-card',

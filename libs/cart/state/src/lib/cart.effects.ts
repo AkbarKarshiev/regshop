@@ -6,7 +6,7 @@ import { $localize } from '@angular/localize/init';
 
 import { CartProduct, CartKeys } from '@regshop/cart/common'
 import { LocalAsyncStorageService } from '@regshop/core/storage/local'
-import { createOrderSuccess  } from '@regshop/order/state'
+import { createOrderSuccess  } from '@regshop/orders/state'
 
 import * as CartActions from './cart.actions';
 import { selectCartProductId } from './cart.reducer';

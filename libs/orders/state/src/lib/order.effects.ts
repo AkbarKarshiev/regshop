@@ -8,7 +8,7 @@ import { LocalAsyncStorageService } from '@regshop/core/storage/local';
 import { OrdersApiService } from '@regshop/orders/api';
 import { Customer, OrderKeys } from '@regshop/orders/common';
 import { selectProducts } from '@regshop/products/state';
-import { selectCustomer } from '@regshop/orders/state';
+import { selectCustomer } from './order.selectors';
 
 import * as OrderActions from './order.actions';
 

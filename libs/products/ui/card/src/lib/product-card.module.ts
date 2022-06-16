@@ -9,6 +9,7 @@ import { CarouselModule } from '@regshop/ui/carousel';
 import { PriceModule } from './price/price.module';
 
 import { ProductCardComponent } from './product-card.component';
+import { ProductPipesModule } from '@regshop/products/ui/pipes';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { ProductCardComponent } from './product-card.component';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    PriceModule
+    PriceModule,
+    ProductPipesModule
   ],
   declarations: [
     ProductCardComponent

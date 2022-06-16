@@ -12,7 +12,7 @@ import { ProductFacade } from '@regshop/products/state';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductListComponent implements OnInit {
-  products$: Observable<Product[]>;
+  products$!: Observable<Product[]>;
 
   constructor(private readonly productFacade: ProductFacade) { }
 
