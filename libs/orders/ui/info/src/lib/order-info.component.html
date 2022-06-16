@@ -10,6 +10,11 @@
     <td mat-cell *matCellDef="let element">{{ element.size }}</td>
   </ng-container>
 
+  <ng-container matColumnDef="count">
+    <th mat-header-cell *matHeaderCellDef i18n="Order info|Count head">Count</th>
+    <td mat-cell *matCellDef="let element">{{ element.count }}</td>
+  </ng-container>
+
   <ng-container matColumnDef="price">
     <th mat-header-cell *matHeaderCellDef i18n="Order info|Price head">Price</th>
     <td mat-cell *matCellDef="let element">{{ element.product?.price | currency }}</td>
