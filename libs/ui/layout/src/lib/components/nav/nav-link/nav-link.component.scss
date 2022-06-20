@@ -10,7 +10,7 @@
         border-left: 1px solid mat.get-color-from-palette(mat.$gray-palette, 300);
     }
 
-    @include store-mixin.media-tablet() {
+    @include store-mixins.media-tablet() {
         border-left: none;
         border-bottom: 1px solid mat.get-color-from-palette(mat.$gray-palette, 300);
 
