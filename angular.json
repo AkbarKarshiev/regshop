@@ -66,6 +66,7 @@
     "products-ui-portlet": "libs/products/ui/portlet",
     "store": "apps/store",
     "store-e2e": "apps/store-e2e",
+    "terms-page": "libs/terms/page",
     "ui-carousel": "libs/ui/carousel",
     "ui-container": "libs/ui/container",
     "ui-grid": "libs/ui/grid",

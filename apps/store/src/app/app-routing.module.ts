@@ -34,6 +34,10 @@ const routes: Routes = [
         loadChildren: () => import('@regshop/chat/page').then((modules) => modules.ChatPageModule),
       },
       {
+        path: NAVIGATION_PATHS.terms,
+        loadChildren: () => import('@regshop/terms/page').then((modules) => modules.TermsPageModule),
+      },
+      {
         path: '',
         loadChildren: () => import('@regshop/errors/pages').then((modules) => modules.ErrorsPagesModule),
       },

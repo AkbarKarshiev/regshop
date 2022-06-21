@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/terms/page",
+  "sourceRoot": "libs/terms/page/src",
+  "prefix": "regshop",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/terms/page"],
+      "options": {
+        "jestConfig": "libs/terms/page/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/terms/page/src/**/*.ts",
+          "libs/terms/page/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

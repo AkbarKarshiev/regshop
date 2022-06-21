@@ -98,6 +98,7 @@
       "@regshop/products/ui/list": ["libs/products/ui/list/src/index.ts"],
       "@regshop/products/ui/pipes": ["libs/products/ui/pipes/src/index.ts"],
       "@regshop/products/ui/portlet": ["libs/products/ui/portlet/src/index.ts"],
+      "@regshop/terms/page": ["libs/terms/page/src/index.ts"],
       "@regshop/ui/carousel": ["libs/ui/carousel/src/index.ts"],
       "@regshop/ui/container": ["libs/ui/container/src/index.ts"],
       "@regshop/ui/grid": ["libs/ui/grid/src/index.ts"],

@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
-    "start": "nx serve",
+    "start": "nx serve --live-reload false",
     "build": "nx build",
     "test": "nx test",
     "dev:ssr": "ng run store:serve-ssr",
