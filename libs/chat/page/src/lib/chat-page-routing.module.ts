@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     component: ChatPageComponent,
     data: {
-      siteMap: {
+      sitemap: {
         loc: '/support',
         priority: '1.0',
       },

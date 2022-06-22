@@ -11,7 +11,8 @@
     "dev:ssr": "ng run store:serve-ssr",
     "serve:ssr": "node dist/store/server/main.js",
     "build:ssr": "ng build && ng run store:server",
-    "prerender": "ng run store:prerender"
+    "prerender": "ng run store:prerender",
+    "generate-sitemap": "ts-node --project=apps/store/tsconfig.sitemap.json apps/store/sitemap-generator.ts"
   },
   "private": true,
   "dependencies": {

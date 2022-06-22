@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     component: TermsPageComponent,
     data: {
-      siteMap: {
+      sitemap: {
         loc: '/terms',
         priority: '1.0'
       },
