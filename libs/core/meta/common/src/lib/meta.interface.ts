@@ -25,8 +25,8 @@ export const META_CONFIG_OG = new InjectionToken<MetaConfigOg>('MetaConfigOg');
 
 export const META_CONFIG_DEFAULT: MetaConfig = {
   title: $localize`:Meta default|:Online store Regshop`,
-  description: $localize`:Meta default|:Regshop sportswear, shoes and accessories. Free delivery in Tashkent and all over Uzbekistan when paying on the website.`,
-  keywords: $localize`:Meta default|:sneakers, sports shoes`,
+  description: $localize`:Meta default|:Regshop laptops, notebooks and accessories. Free delivery in Tashkent and all over Uzbekistan when paying on the website.`,
+  keywords: $localize`:Meta default|:laptops, notebooks`,
 }
 
 export const META_CONFIG_OG_DEFAULT: MetaConfigOg = {

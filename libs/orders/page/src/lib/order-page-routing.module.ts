@@ -14,7 +14,7 @@ const routes: Routes = [
         title: $localize`:Order page meta|:Order | Regshop`,
         // eslint-disable-next-line max-len
         description: $localize`:Order page meta|:Place your order by filling out the form below. Our manager will contact you immediately after receiving the application.`,
-        keywords: $localize`:Order page meta|:order, place a order, banshop`,
+        keywords: $localize`:Order page meta|:order, place a order, regshop`,
       }
     } as Partial<RouteData>
   }

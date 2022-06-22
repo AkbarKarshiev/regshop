@@ -57,7 +57,7 @@ export class MetaService {
     link.setAttribute('rel', 'canonical');
     link.setAttribute('id', 'canonical');
     link.setAttribute('href', this.getCanonicalURL(url));
-    if (this.document.getElementById('canonical')) {
+    if (!this.document.getElementById('canonical')) {
       this.document.head.appendChild(link);
     }
   }

@@ -62,7 +62,7 @@
         "simple-import-sort/imports": [
           "error",
           {
-            "groups": [["^\\u0000"], ["^@?(?!banshop)\\w"], ["^@banshop?\\w"], ["^\\w"], ["^[^.]"], ["^\\."]]
+            "groups": [["^\\u0000"], ["^@?(?!regshop)\\w"], ["^@regshop?\\w"], ["^\\w"], ["^[^.]"], ["^\\."]]
           }
         ],
         "sort-imports": "off",
