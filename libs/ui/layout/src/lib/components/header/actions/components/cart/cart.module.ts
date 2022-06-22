@@ -7,10 +7,11 @@ import { RouterModule } from '@angular/router';
 import { NavigationPipesModule } from '@regshop/core/navigation/ui/pipes';
 
 import { CartComponent } from './cart.component';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
   declarations: [CartComponent],
   exports: [CartComponent],
-  imports: [CommonModule, NavigationPipesModule, MatButtonModule, MatIconModule, RouterModule]
+  imports: [CommonModule, NavigationPipesModule, MatButtonModule, MatIconModule, RouterModule, MatBadgeModule]
 })
 export class CartModule { }
