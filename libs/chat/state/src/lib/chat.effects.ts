@@ -28,11 +28,12 @@ export class ChatEffects implements OnInitEffects {
     this.actions$.pipe(
       ofType(ChatActions.restore),
       fetch({
-        run: ({ chatMessages }) =>
-          // @ts-ignore
-          !chatMessages.length
+        run: ({ chatMessages }) => {
+          console.log(chatMessages);
+          return !chatMessages?.length
             ? ChatActions.createMessage({ chatMessageCreate: { message: 'Hello. How can I help you?', isOwner: false } })
             : undefined
+        }
       })
     )
   );
