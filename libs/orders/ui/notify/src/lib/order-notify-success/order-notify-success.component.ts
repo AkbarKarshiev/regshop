@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
-import { NavigationPaths, PATHS } from '@regshop/core/navigation/common';
+import { OrderDetails } from '@regshop/orders/common';
 
 @Component({
   selector: 'regshop-order-notify-success',
@@ -9,5 +10,5 @@ import { NavigationPaths, PATHS } from '@regshop/core/navigation/common';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OrderNotifySuccessComponent {
-  constructor(@Inject(PATHS) public readonly paths: NavigationPaths) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public readonly matData: OrderDetails) {}
 }
