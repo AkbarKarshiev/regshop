@@ -12,11 +12,14 @@ export class EnvironmentService {
 
     this.environments = {
       ...(environments ?? ENVIRONMENTS_DEFAULT),
-      // google: {
-      //   key: process.env['GOOGLE_KEY'] ?? '',
-      //   id: process.env['GOOGLE_ID'] ?? '',
-      //   name: process.env['GOOGLE_NAME'] ?? '',
-      // }
+      google: {
+        // @ts-ignore
+        key: process.env['GOOGLE_KEY'] ?? '',
+        // @ts-ignore
+        id: process.env['GOOGLE_ID'] ?? '',
+        // @ts-ignore
+        name: process.env['GOOGLE_NAME'] ?? '',
+      }
     };
   }
 

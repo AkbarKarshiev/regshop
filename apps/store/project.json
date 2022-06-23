@@ -5,26 +5,40 @@
   "prefix": "regshop",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular-builders/custom-webpack:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "customWebpackConfig": {
+          "path": "apps/store/webpack-dev.config.ts"
+        },
         "outputPath": "dist/store/browser",
         "index": "apps/store/src/index.html",
-        "main": "apps/store/src/main.ts",
+        "main": "apps/store/src/main.browser.ts",
         "polyfills": "apps/store/src/polyfills.ts",
         "tsConfig": "apps/store/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
+        "assets": [
+          "apps/store/src/browserconfig.xml",
+          "apps/store/src/site.webmanifest",
+          "apps/store/src/favicon.ico",
+          "apps/store/src/robots.txt",
+          "apps/store/src/sitemap.xml",
+          "apps/store/src/assets"
+        ],
         "styles": ["apps/store/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
         "production": {
+          "indexTransform": "apps/store/index.transform.ts",
+          "customWebpackConfig": {
+            "path": "apps/store/webpack-prod.config.ts"
+          },
           "budgets": [
             {
               "type": "initial",
               "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumError": "2mb"
             },
             {
               "type": "anyComponentStyle",
@@ -38,7 +52,8 @@
               "with": "apps/store/src/environments/environment.prod.ts"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "sourceMap": true
         },
         "development": {
           "buildOptimizer": false,
@@ -52,7 +67,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@angular-builders/custom-webpack:dev-server",
       "configurations": {
         "production": {
           "browserTarget": "store:build:production"
@@ -72,10 +87,7 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/store/src/**/*.ts",
-          "apps/store/src/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/store/src/**/*.ts", "apps/store/src/**/*.html"]
       }
     },
     "test": {
@@ -87,22 +99,30 @@
       }
     },
     "server": {
-      "executor": "@angular-devkit/build-angular:server",
+      "executor": "@angular-builders/custom-webpack:server",
       "options": {
+        "customWebpackConfig": {
+          "path": "apps/store/webpack-dev.config.ts"
+        },
         "outputPath": "dist/store/server",
         "main": "apps/store/server.ts",
         "tsConfig": "apps/store/tsconfig.server.json",
-        "inlineStyleLanguage": "scss"
+        "inlineStyleLanguage": "scss",
+        "localize": false
       },
       "configurations": {
         "production": {
+          "customWebpackConfig": {
+            "path": "apps/store/webpack-prod.config.ts"
+          },
           "outputHashing": "media",
           "fileReplacements": [
             {
               "replace": "apps/store/src/environments/environment.ts",
               "with": "apps/store/src/environments/environment.prod.ts"
             }
-          ]
+          ],
+          "bundleDependencies": true
         },
         "development": {
           "optimization": false,
@@ -129,7 +149,8 @@
     "prerender": {
       "executor": "@nguniversal/builders:prerender",
       "options": {
-        "routes": ["/"]
+        "routesFile": "apps/store/routes.txt",
+        "guessRoutes": false
       },
       "configurations": {
         "production": {

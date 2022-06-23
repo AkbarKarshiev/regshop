@@ -21,10 +21,9 @@ export class ProductEffects implements OnInitEffects {
       fetch({
         id: (action, products) => 'init-products',
         run: (action, products) => {
-          // const transferProducts = this.transferState.get<Product[]>(PRODUCTS_META, []);
-          // Your custom service 'load' logic goes here. For now just return a success action...
-          return ProductActions.restore({ products: products ?? [] });
-          // return ProductActions.restore({ products: products ?? transferProducts });
+          const transferProducts = this.transferState.get<Product[]>(PRODUCTS_META, []);
+
+          return ProductActions.restore({ products: products ?? transferProducts });
         },
         onError: (action, error) => console.error(`Error: ${action.type}\n`, error)
       })
@@ -41,9 +40,9 @@ export class ProductEffects implements OnInitEffects {
             map((products) => {
               this.localAsyncStorage.setItem(ProductKeys.Products, products);
 
-              // if (this.platformService.isServer && products.length) {
-              //   this.transferState.set<Product[]>(PRODUCTS_META, products);
-              // }
+              if (this.platformService.isServer && products.length) {
+                this.transferState.set<Product[]>(PRODUCTS_META, products);
+              }
 
               return ProductActions.loadSuccess({ products })
             })
@@ -60,7 +59,7 @@ export class ProductEffects implements OnInitEffects {
     private readonly actions$: Actions,
     private readonly localAsyncStorage: LocalAsyncStorageService,
     private readonly productApiService: ProductApiService,
-    // private readonly transferState: TransferState,
+    private readonly transferState: TransferState,
     private readonly platformService: PlatformService
   ) {}
 
