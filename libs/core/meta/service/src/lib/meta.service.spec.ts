@@ -1,12 +1,13 @@
+import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 import { TestBed } from '@angular/core/testing';
+import { mock, when } from 'ts-mockito';
+
+import { providerOf } from '@regshop/core/testing';
+import { ENVIRONMENTS_DEFAULT, EnvironmentService } from '@regshop/core/environments/service';
+import { META_CONFIG, META_CONFIG_DEFAULT, META_CONFIG_OG, META_CONFIG_OG_DEFAULT } from '@regshop/core/meta/common';
 
 import { MetaService } from './meta.service';
-import { Router } from '@angular/router';
-import { ENVIRONMENTS_DEFAULT, EnvironmentService } from '@regshop/core/environments/service';
-import { mock, when } from 'ts-mockito';
-import { providerOf } from '@regshop/core/testing';
-import { META_CONFIG, META_CONFIG_DEFAULT, META_CONFIG_OG, META_CONFIG_OG_DEFAULT } from '@regshop/core/meta/common';
-import { DOCUMENT } from '@angular/common';
 
 describe('MetaService', () => {
   let getProp: <T = HTMLMetaElement>(prop: string) => T | null;
