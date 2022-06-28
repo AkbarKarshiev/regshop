@@ -14,6 +14,7 @@ type ObjectLike<O extends Record<string, any>, P extends keyof O = keyof O> = Pi
 /**
  * Extract a touched changed observable from an abstract control
  * @param control AbstractControl like object with markAsTouched method
+ * @see https://github.com/angular/angular/issues/10887#issuecomment-547392548
  */
 export const extractTouchedChanges = (control: ObjectLike<AbstractControl, 'markAsTouched' | 'markAsUntouched'>): Observable<boolean> => {
   const prevMarkAsTouched = control.markAsTouched;
