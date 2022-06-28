@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Router } from '@angular/router';
-import { TestBed } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { mock, when } from 'ts-mockito';
 
 import { providerOf } from '@regshop/core/testing';
@@ -22,23 +22,25 @@ describe('MetaService', () => {
     environmentServiceMock = mock(EnvironmentService);
   });
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [],
-      providers: [
-        providerOf(Router, routerMock),
-        providerOf(EnvironmentService, environmentServiceMock),
-        {
-          provide: META_CONFIG,
-          useValue: META_CONFIG_DEFAULT,
-        },
-        {
-          provide: META_CONFIG_OG,
-          useValue: META_CONFIG_OG_DEFAULT,
-        },
-      ],
-    }).compileComponents();
-  })
+  beforeEach(
+    waitForAsync(() => {
+      void TestBed.configureTestingModule({
+        imports: [],
+        providers: [
+          providerOf(Router, routerMock),
+          providerOf(EnvironmentService, environmentServiceMock),
+          {
+            provide: META_CONFIG,
+            useValue: META_CONFIG_DEFAULT,
+          },
+          {
+            provide: META_CONFIG_OG,
+            useValue: META_CONFIG_OG_DEFAULT,
+          },
+        ],
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     when(environmentServiceMock.environments).thenReturn(ENVIRONMENTS_DEFAULT);
