@@ -17,8 +17,8 @@ const routes: Routes = [
       meta: {
         title: $localize`:Home page meta|:Online store Regshop`,
         // eslint-disable-next-line max-len
-        description: $localize`:Home page meta|:Regshop laptop, laptops and accessories. Free delivery in Tashkent and all over Uzbekistan when paying on the website.`,
-        keywords: $localize`:Home page meta|:online store, laptops, notebooks, regshop`,
+        description: $localize`:Home page meta|:Regshop t-shirts, tank-tops. Free delivery in Tashkent and all over Uzbekistan when paying on the website.`,
+        keywords: $localize`:Home page meta|:online store, t-shirts, tank-tops, regshop`,
       }
     } as Partial<RouteData>
   }
