@@ -8,12 +8,12 @@ import { FormControl } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProductSizesComponent {
-  @Input() sizes!: number[];
+  @Input() sizes!: string[];
   @Input() control!: FormControl;
 
-  active!: number;
+  active!: string;
 
-  onSelect(size: number): void {
+  onSelect(size: string): void {
     this.control.patchValue(size);
     this.active = size;
   }

@@ -9,5 +9,5 @@ import { FormControl } from '@angular/forms';
 })
 export class ProductSizeComponent {
   @Input() control!: FormControl;
-  @Input() sizes: number[] = [];
+  @Input() sizes: string[] = [];
 }
