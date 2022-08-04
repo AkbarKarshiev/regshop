@@ -6,9 +6,7 @@ import { map } from 'rxjs/operators';
 import { NavigationService } from '@regshop/core/navigation/service';
 import { ProductFacade } from '@regshop/products/state';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ProductGuard implements CanActivate {
   private readonly redirectTree = this.navigationService.createUrlTree(this.navigationService.getPaths().home);
 
